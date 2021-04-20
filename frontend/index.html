@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digit Recognition</title>
+	<link rel="stylesheet" href="index.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+	<script type="text/javascript" src="index.js"></script>
+
+	<meta name='viewport' content='user-scalable=0' >
+
+</head>
+<body style="overscroll-behavior-y: none;">
+	<div id="main">
+		<h1>Write a number here</h1>
+		<canvas id="canvas"></canvas>
+
+		<br>
+
+		<button id="clear_button" class="mdc-button mdc-button--raised">
+			<span id="clear_icon" class="material-icons">add</span>
+		</button>
+
+		<br>
+
+		<h1>Prediction</h1>
+		<div id="output_div">
+			<p id="output_text"></p>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+html
+{
+	width: 100%;
+	overscroll-behavior-y: none;
+	overflow: hidden;
+}
+
+body
+{
+	background-color: #282828;
+	overscroll-behavior-y: none;
+	margin: auto;
+}
+
+h1
+{
+	font-size: 3vh;
+	color: white;
+}
+
+#main
+{
+	width: 90%;
+	text-align:center;
+	margin: auto;
+}
+
+#canvas
+{
+	width: 45vh;
+	height: 45vh;
+	margin: auto;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+#output_div
+{
+	width: 20vh;
+	height: 20vh;
+	margin: auto;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+#clear_button
+{
+	margin-top: 2vh;
+	width: 7vh;
+	height: 7vh;
+	border-radius: 3.5vh;
+	--mdc-theme-primary: #ffffff;
+	--mdc-theme-secondary: #000000;
+	color: black;
+}
+
+#clear_icon
+{
+	font-size: 4vh;
+}
+
+#clear_button:active
+{
+	--mdc-theme-primary: #d8d8d8;
+	--mdc-theme-secondary: #000000;
+	color: black;
+}
