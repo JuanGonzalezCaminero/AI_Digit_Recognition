@@ -1,6 +1,8 @@
 
+//const server = "192.168.1.88:80";
+//const server = "localhost:80";
 const protocol = "http";
-const server = "192.168.1.88:5000";
+
 
 var drawing = false;
 
@@ -176,7 +178,7 @@ function send_image(canvas)
 		{	
 			if (req.readyState == XMLHttpRequest.DONE) {
 				//Uploaded
-				document.getElementById("output_text").innerHTML = req.responseText;
+				document.getElementById("output_div").innerHTML = req.responseText;
 				//console.log(req.responseText)
 			}
 		};

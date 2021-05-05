@@ -1,0 +1,8 @@
+server {
+    listen 80;
+
+    location /upload {
+        uwsgi_pass unix:/backend/backend.sock;
+        include uwsgi_params;
+    }
+}

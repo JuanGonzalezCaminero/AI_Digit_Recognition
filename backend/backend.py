@@ -4,7 +4,8 @@ from PIL import Image, ImageShow
 import io
 from joblib import load
 
-app = Flask(__name__, static_url_path='', static_folder='static')
+#app = Flask(__name__, static_url_path='', static_folder='static')
+app = Flask(__name__)
 
 knn_classifier = load("knn.joblib")
 
@@ -37,16 +38,10 @@ def process_image():
 
 	#print(list(img.getdata()))
 
-	
-
 	#print(request.get_data())
 	#print(len(request.get_data()))
 	#file = open("tmp.jpeg", "wb")
 	#file.write(request.get_data())
 	#file.close()
 
-	return prediction;
-
-#@app.route('/')
-#def hello_world():
-#    return 'Hello, World!'
+	return str(prediction[0]);
